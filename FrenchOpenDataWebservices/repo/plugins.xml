@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<plugins>
+    <pyqgis_plugin name="FrenchOpenDataWebservices" version="0.1.0">
+        <description>Webservices issus de l'OpenData français</description>
+        <homepage></homepage>
+        <qgis_minimum_version>3.0</qgis_minimum_version>
+        <file_name>FrenchOpenDataWebservices.zip</file_name>
+        <author_name>Lucas Jumeau-Mousset, Milo Monnier</author_name>
+        <download_url></download_url>
+    </pyqgis_plugin>
+</plugins>

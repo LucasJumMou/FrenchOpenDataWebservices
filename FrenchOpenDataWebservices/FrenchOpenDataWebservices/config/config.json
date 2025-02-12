@@ -1,0 +1,2226 @@
+{
+  "title": "FrenchOpenDataWebservices - version du 18 mai 2024",
+  "ident": "316522f0-d2ef-4422-b935-e333815b4f7e",
+  "description": "",
+  "type": "folder",
+  "children": [
+    {
+      "title": "Fonds de cartes",
+      "ident": "",
+      "description": "Fonds de cartes IGN, OpenStreetMap, etc.",
+      "metadata_url": "",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Plan IGN",
+          "ident": "plan_ign",
+          "description": "Fond cartographique proposé par l’IGN.",
+          "metadata_url": "https://www.geoportail.gouv.fr/actualites/plan-ign-la-nouvelle-reference-cartographique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "OpenStreetMap - Style Google Maps",
+          "ident": "openstreetmap",
+          "description": "Fond de plan OpenStreetMap élaboré par GéoGrandEst - OSM style Google Maps",
+          "metadata_url": "https://www.datagrandest.fr/geonetwork/srv/fre/catalog.search#/metadata/FR-200052264-GGE-OSM",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=relief&styles&tilePixelRatio=0&url=https://osm.datagrandest.fr/mapcache",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "ADMINEXPRESS COG",
+          "ident": "admin_express",
+          "description": "Délimitations administratives française qui varient en fonction du zoom sur la carte.  Contient les Régions, Départements, EPCI, Métropoles, Communes.",
+          "metadata_url": "https://geoservices.ign.fr/adminexpress",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ADMINEXPRESS-COG.LATEST&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "PLEIADES 2022",
+          "ident": "pleiades",
+          "description": "Mosaïque d’orthoimages résultant d’un traitement massivement automatisé pour minimiser les délais de production.",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/ortho-express-2022",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2022&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "SPOT 2023",
+          "ident": "spot",
+          "description": "Mosaïque d’orthoimages résultant d’un traitement massivement automatisé pour minimiser les délais de production.",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHO-SAT.SPOT.2023&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Image aérienne (IGN)",
+      "ident": "",
+      "description": "Photographies aériennes rectifiées produites par l'IGN en couleurs (RVB) et infra-rouge couleur (IRC)",
+      "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/la-bd-orthor",
+      "type": "folder",
+      "children": [
+        {
+          "title": "BD ORTHO 50cm",
+          "ident": "ortho_50",
+          "description": "Mosaïque d’orthoimages produites tous les 3-4 ans.",
+          "metadata_url": "https://geoservices.ign.fr/bdortho",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "BD ORTHO 20cm",
+          "ident": "ortho_20",
+          "description": "Mosaïque d’orthoimages produites tous les 3-4 ans.",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=HR.ORTHOIMAGERY.ORTHOPHOTOS&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "ORTHO infra-rouge couleur (IRC)",
+          "ident": "ortho_infra",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS.IRC&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Ortho Express 2023",
+          "ident": "ortho_express",
+          "description": "Mosaïque d’orthoimages résultant d’un traitement massivement automatisé pour minimiser les délais de production.",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/ortho-express-2022",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Image aérienne historique (IGN)",
+      "ident": "image_historique",
+      "description": "Données Ortho® anciennes éditions et historiques.",
+      "metadata_url": "https://geoservices.ign.fr/documentation/donnees/ortho/bdorthohisto",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Photographies aériennes 2020",
+          "ident": "ortho_historique_2020",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2020&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2019",
+          "ident": "ortho_historique_2019",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2019&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2018",
+          "ident": "ortho_historique_2018",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2018&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2017",
+          "ident": "ortho_historique_2017",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2017&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2016",
+          "ident": "ortho_historique_2016",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2016&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2015",
+          "ident": "ortho_historique_2015",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2015&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2014",
+          "ident": "ortho_historique_2014",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2014&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2013",
+          "ident": "ortho_historique_2013",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2013&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2012",
+          "ident": "ortho_historique_2012",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2012&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2011",
+          "ident": "ortho_historique_2011",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2011&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2010",
+          "ident": "ortho_historique_2010",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2010&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2009",
+          "ident": "ortho_historique_2009",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2009&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2008",
+          "ident": "ortho_historique_2008",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2008&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2007",
+          "ident": "ortho_historique_2007",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2007&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2006",
+          "ident": "ortho_historique_2006",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2006&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2005",
+          "ident": "ortho_historique_2005",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2005&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2004",
+          "ident": "ortho_historique_2004",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2004&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2003",
+          "ident": "ortho_historique_2003",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2003&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2002",
+          "ident": "ortho_historique_2002",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2002&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2001",
+          "ident": "ortho_historique_2001",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2001&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2000",
+          "ident": "ortho_historique_2000",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2000&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2011-2015",
+          "ident": "ortho_historique_20112015",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2011-2015&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2006-2010",
+          "ident": "ortho_historique_20062010",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2006-2010&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 2000-2005",
+          "ident": "ortho_historique_20002005",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS2000-2005&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Photographies aériennes 1950-1965",
+          "ident": "ortho_historique_19501965",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ORTHOIMAGERY.ORTHOPHOTOS.1950-1965&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Agriculture",
+      "ident": "",
+      "description": "Couches liées à l'agriculture",
+      "metadata_url": "",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Registre Parcellaire Graphique (RPG) - Dernière édition",
+          "ident": "rpg_lastest",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE.LATEST&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Bandes tampons des cours d'eau BCAE 4",
+          "ident": "bcae_eau",
+          "description": "Cours d’eau concernés par les règles des Bonnes Conditions Agricoles et Environnementales (BCAE) de la PAC  et devant rester bordés d'une bande enherbée",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/cours-eau-bcae-2021",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=HYDROGRAPHY.BCAE.LATEST&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Prairies sensibles BCAE 9",
+          "ident": "bcae_prairie",
+          "description": "Prairies permanentes désignées comme écologiquement sensibles au titre des règles des bonnes conditions  agricoles et environnementales (BCAE)",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/prairies-sensibles-bcae",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=PRAIRIES.SENSIBLES.BCAE&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Parcelles AOC viticoles",
+          "ident": "aoc",
+          "description": "Délimitations parcellaires AOC viticoles diffusées par l'INAO",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/inao-aoc-viticoles-parcellaire",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=Aire-Parcellaire&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2021",
+          "ident": "rpg_2021",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2021&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2020",
+          "ident": "rpg_2020",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2020&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2019",
+          "ident": "rpg_2019",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2019&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2018",
+          "ident": "rpg_2018",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2018&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2017",
+          "ident": "rpg_2017",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2017&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2016",
+          "ident": "rpg_2016",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2016&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2015",
+          "ident": "rpg_2015",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2015&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2014",
+          "ident": "rpg_2014",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2014&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2013",
+          "ident": "rpg_2013",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2013&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2012",
+          "ident": "rpg_2012",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2012&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2011",
+          "ident": "rpg_2011",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2011&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2010",
+          "ident": "rpg_2010",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2010&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2009",
+          "ident": "rpg_2009",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2009&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2008",
+          "ident": "rpg_2008",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2008&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Registre Parcellaire Graphique (RPG) 2007",
+          "ident": "rpg_2007",
+          "description": "BDD géographique servant de référence à l'instruction des aides de la politique agricole commune (PAC)",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/registre-parcellaire-graphique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDUSE.AGRICULTURE2007&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Occupation du sol",
+      "ident": "",
+      "description": "Données d'occupation du sol (IGN)",
+      "metadata_url": "",
+      "type": "folder",
+      "children": [
+        {
+          "title": "OCS GE - Couverture du sol",
+          "ident": "ocsge_couverture",
+          "description": "L'OCcupation du Sol à Grande Echelle (OCS GE) est une base de données vectorielle produite par l'IGN pour la description de l’occupation du sol. Elle s’appuie sur un modèle ouvert séparant la couverture du sol et l’usage du sol",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/ocs-ge",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=OCSGE.COUVERTURE&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "OCS GE - Usage du sol",
+          "ident": "ocsge_usage",
+          "description": "L'OCcupation du Sol à Grande Echelle (OCS GE) est une base de données vectorielle produite par l'IGN pour la description de l’occupation du sol. Elle s’appuie sur un modèle ouvert séparant la couverture du sol et l’usage du sol",
+          "metadata_url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/ocs-ge",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=OCSGE.USAGE&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Corine Land Cover 2018",
+          "ident": "clc",
+          "description": "Inventaire biophysique européen de l’occupation des sols à l'échelle 1:100000. CLC permet de cartographier des unités homogènes d’occupation des sols d’une surface minimale de 25 ha",
+          "metadata_url": "https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDCOVER.CLC18_FR&styles=CORINE Land Cover - France métropolitaine&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Altimétrie (IGN)",
+      "ident": "",
+      "description": "Données MNT, MNS, pente, altitude, estompage, trait de côte, masque de source",
+      "metadata_url": "https://geoservices.ign.fr/services-web-experts-altimetrie",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Altitude - Carte du relief",
+          "ident": "relief",
+          "description": "Représentation de l’altitude sous forme de teintes hypsométriques (fausses couleurs)",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/carte-du-relief",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/jpeg&layers=ELEVATION.SLOPES&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Carte des pentes",
+          "ident": "pentes",
+          "description": "Représentation des classes de pentes supérieures à 30°, 35°, 40°, et 45° obtenues par traitement  du MNT RGE ALTI au pas de 1m",
+          "metadata_url": "https://www.geoportail.gouv.fr/donnees/carte-des-pentes",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Courbes de niveau",
+          "ident": "courbes_niveau",
+          "description": "Modèle numérique de terrain sous forme de courbes de même altitude, appelées aussi « isoplèthes d’altitude »",
+          "metadata_url": "https://geoservices.ign.fr/documentation/donnees/alti/courbes-de-niveau",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ELEVATION.CONTOUR.LINE&styles=normal&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Environnement",
+      "ident": "",
+      "description": "Zonages environnementaux diffusés pas l'Inventaire National du Patrimoine Naturel (INPN) et de la Direction Régionale de l'Environnement, de l'Aménagement et du Logement d'Occitanie (DREAL)",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Arrêtés de Protection de Biotope (APB)",
+          "ident": "apb",
+          "description": "Actes administratifs préféctoraux pris en vue de préserver les habitats des espèces protégées, l’équilibre biologique ou la fonctionnalité des milieux",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/cdc54288-665e-48d1-9cdf-ef563e100798",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Arretes_de_protection_de_biotope&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Arrêtés de Protection d’Habitats Naturels (APHN)",
+          "ident": "aphn",
+          "description": "Arrêtés visant à préserver des habitats naturels présentant un intérêt particulier à titre scientifique, de rôle essentiel dans l’écosystème ou de la préservation du patrimoine naturel",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/ec3e4da1-da04-4e63-924c-1dfa69bc2989",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Arretes_de_protection_d_habitats_naturels&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Arrêtés de Protection de Géotope (APG)",
+          "ident": "apg",
+          "description": "Outil de protection réglementaire des sites figurant sur la liste départementale des sites d’intérêt géologique",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/3666668b-9553-4942-9462-2699b42d89f7",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=default&layers=Arretes_de_protection_de_geotope&maxHeight=256&maxWidth=256&styles=&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Biens du patrimoine mondial de l'UNESCO",
+          "ident": "unesco",
+          "description": "Biens inscrits sur la liste du patrimoine mondial de l'UNESCO du fait de leur valeur patrimoniale exceptionnelle",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/ea950812-5a72-4540-bf3f-868efc5bbcc3",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Bien_du_patrimoine_mondial_de_l_UNESCO&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Géoparcs mondiaux UNESCO",
+          "ident": "géoparcs",
+          "description": "Territoires labellisés par l’UNESCO où l’élément géologique patrimonial est le support pour des projets de protection, de développements du territoire et d’éducation",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/d5b93447-0802-4799-b64f-bf6d0aadbb87",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=default&layers=Geoparcs&maxHeight=256&maxWidth=256&styles=&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Inventaire du Patrimoine géologique National (INPG)",
+          "ident": "inpg",
+          "description": "Programme recensant les sites géologiques d’intérêt patrimonial sur la plateforme InvenTerre",
+          "metadata_url": "https://inventerre.mnhn.fr/accueil",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=default&layers=INPG&maxHeight=256&maxWidth=256&styles=&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Parcs Nationaux (PN)",
+          "ident": "pn",
+          "description": "Vaste espace protégé dont le patrimoine naturel, culturel et paysager est exceptionnel. Classiquement composé de 2 zones : le cœur de parc et une aire d'adhésion",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/53286c20-c2b0-4c6f-b877-7afeafbe39dc",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Parcs_nationaux&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Parcs Naturels Régionaux (PNR)",
+          "ident": "pnr",
+          "description": "Outils de valorisation de vastes espaces de fort intérêt culturel et naturel",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/951d23fd-bf2f-4a23-88b5-2ca8622e1cd1",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Parcs_naturels_regionaux&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves Biologiques (RBiol)",
+          "ident": "rbiol",
+          "description": "Espace protégé en milieu forestier ou en milieu associé à la forêt (landes, mares, tourbières, dunes)",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/71a5f31d-3ef5-4c45-bd31-39141154e277",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_biologiques&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves de Biosphère (RBios)",
+          "ident": "rbios",
+          "description": "Réserves naturelles reconnues par le Programme sur l’Homme et la Biosphère créé par l’UNESCO",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/016307b9-5d14-4f61-873f-a41691d13a7b",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_de_la_biosphere&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves Intégrales de Parcs Nationaux (RIPN)",
+          "ident": "ripn",
+          "description": "Créées au sein d'un coeur de PN afin d'assurer, dans un but scientifique, une protection  plus grande de certains éléments de la faune et de la flore",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/5ca16eed-0bc0-4e56-94b4-219fc400b68c",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_Integrales_de_Parcs_Nationaux&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves Naturelles Nationales (RNN)",
+          "ident": "rnn",
+          "description": "Aires protégeant à long terme des espaces, espèces ou objets géologiques",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_Naturelles_Nationales&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves Naturelles Régionales (RNR)",
+          "ident": "rnr",
+          "description": "Identiques aux RNN dans leur gestion, mais créées par les Régions",
+          "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_naturelles_regionales&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Réserves Nationales de Chasse et de Faune Sauvage (RNCFS)",
+          "ident": "rncfs",
+          "description": "Réserves gérées par l'Office Français de la Biodiversité (OFB) ou un autre établissement public visant à la protection d’espèces de faune sauvage menacées",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/f305b23f-7439-4cd6-9403-3f18563a7a6e",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Reserves_nationales_de_chasse_et_faune_sauvage&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Conservatoires d'Espaces Naturels - Sites Acquis (CEN-SA)",
+          "ident": "censa",
+          "description": "Sites acquis et/ou « assimilés » (bail emphytéotique et contrat de plus de 18 ans) dont les  CEN ont pleinement la maîtrise foncière",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/e724c2e1-af95-4c2a-8ce9-7154f2e06673",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Terrains_acquis_des_Conservatoires_des_espaces_naturels&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Conservatoires d'Espaces Naturels - Sites Gérés (CEN-SG)",
+          "ident": "censg",
+          "description": "Sites gérés (location, gestion de moins de 18 ans, convention de gestion) par les CEN",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/e724c2e1-af95-4c2a-8ce9-7154f2e06673",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=CEN_MU&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Conservatoire du Littoral (CDL) - Terrains acquis",
+          "ident": "cdl_acquis",
+          "description": "Terrains acquis par le Conservatoire du Littoral pour la sauvegarde des espaces côtiers et lacustres.",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/5a24eed8-f8c9-4554-98d8-9d7fb364efb6",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Terrains_du_Conservatoire_du_Littoral&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Conservatoire du Littoral (CDL) - Périmètres autorisés",
+          "ident": "cdl_autorises",
+          "description": "Zones à préserver définies par le Conservatoire et susceptibles d’être acquises par celui-ci",
+          "metadata_url": "https://geoservices.ign.fr/services-web-experts-environnement",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "REQUEST=GetCapabilities&VERSION=1.3.0&crs=EPSG:2154&featureCount=10&format=image/png&layers=PROTECTEDAREAS.MNHN.CDL.PERIMETER&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/environnement/geoportail/r/wms?SERVICE%3DWMS",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Zones humides protégées par la Convention de Ramsar",
+          "ident": "ramsar",
+          "description": "Zones humides d'importance internationale inscrite sur la liste établie par la Convention de Ramsar",
+          "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Sites_Ramsar&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "ZNIEFF1",
+          "ident": "znieff1",
+          "description": "Zones Naturelles d’Intérêt Ecologique, Faunistique et Floristique de type 1, définies par la présence d’espèces ou de milieux rares, remarquables ou caractéristiques",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/f30dd410-9c72-47f5-a384-96603ddc703e",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Znieff1&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "ZNIEFF2",
+          "ident": "znieff2",
+          "description": "Zones Naturelles d’Intérêt Ecologique, Faunistique et Floristique de type 2 : grands ensembles naturels ou peu modifiés offrant des potentialités biologiques importantes. Moins remarquables que les ZNIEFF1",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/50bc6286-83f6-4494-9fb6-3d82a43cafa8",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Znieff2&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Zones Importantes pour la Conservation des Oiseaux (ZICO)",
+          "ident": "zico",
+          "description": "Les ZICO ont servi de base pour établir les Zones de Protection Spéciale (ZPS) Natura2000",
+          "metadata_url": "https://inpn.mnhn.fr/telechargement/cartes-et-information-geographique/inv/zico",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=ZICO&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Natura 2000 - Zones de Protection Spéciale (ZPS) - Directive Oiseaux",
+          "ident": "zps",
+          "description": "Zones visant la conservation des espèces d'oiseaux sauvages figurant à l'annexe I de la Directive europénne Oiseaux",
+          "metadata_url": "https://inpn-inspire.mnhn.fr/catalogue/srv/fre/catalog.search#/metadata/c334eb2e-634e-479a-b867-8bf352e5827f",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Zones_de_protection_speciale&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Natura 2000 - Zones Spéciales de Conservation (ZSC/SIC) - Directive Habitats",
+          "ident": "zps_sic",
+          "description": "Désignées dans le droit français comme ZSC, ces zones sont des Sites d'Importance Communautaire (SIC) au sens de l'UE et de la Directive 'Habitats, Faune, Flore'",
+          "metadata_url": "https://www.nord.gouv.fr/Actions-de-l-Etat/Environnement/Nature-et-biodiversite/Natura-2000/Natura-2000-ZPS-ZSC-SIC-DOCOB",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=Sites_d_importance_communautaire&maxHeight=256&maxWidth=256&styles=default&url=https://ws.carmencarto.fr/WMS/119/fxx_inpn?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Zonage informatif des obligations légales de débroussaillement",
+          "ident": "debroussailement",
+          "description": "Le Zonage Informatif des Obligations légales de débroussaillement (OLD) est une carte en ligne qui permet aux particuliers de pouvoir localiser leur terrain et savoir s’ils sont soumis à la réglementation sur les OLD. Le Zonage Informatif des OLD ne précise pas les règles à appliquer pour débroussailler correctement (profondeur de débroussaillement depuis l’habitation, distance entre les arbres, hauteur d’élagage, etc.). Pour se renseigner sur la réglementation sur les OLD en vigueur sur leur département, les particuliers peuvent contacter la mairie ou la préfecture. Les règles de mise en œuvre des OLD peuvent être différentes d’un département à l’autre, car elles tiennent compte du contexte local",
+          "metadata_url": "https://www.geoportail.gouv.fr/depot/fiches/OLD/Info_zonage-OLD-Geoportail.pdf",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=DEBROUSSAILLEMENT&styles=nolegend&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Forets publiques",
+          "ident": "forets_publiques",
+          "description": "Localisation des forêts publiques domaniales et non domaniales (communales, sectionales, départementales et d’établissements publics) gérées par l’Office national des forêts (ONF).",
+          "metadata_url": "https://inventaire-forestier.ign.fr/spip.php?rubrique70",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=FORETS.PUBLIQUES&styles=FORETS PUBLIQUES ONF&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Carte forestière (v2 : 2006-)",
+          "ident": "carte_forestiere",
+          "description": "Localisation de 32 types de formations végétales en France métropolitaine (2018)",
+          "metadata_url": "https://inventaire-forestier.ign.fr/spip.php?article646",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=LANDCOVER.FORESTINVENTORY.V2&styles=LANDCOVER.FORESTINVENTORY.V2&tileMatrixSet=PM&tilePixelRatio=0&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Périmètres de protection de réserves naturelles",
+          "ident": "pprn",
+          "description": "Un périmètre de protection peut être mis en place en périphérie d’une réserve naturelle. Cet espace constitue une zone tampon autour de l’espace classé, améliorant les échanges écologiques entre la réserve et sa périphérie.",
+          "metadata_url": "https://terranota.fr/les-reserves-naturelles-et-perimetres-de-protection-autour-des-reserves-naturelles-ac3/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PROTECTEDAREAS.MNHN.RN.PERIMETER&styles=normal&tileMatrixSet=PM&url=https://wxs.ign.fr/environnement/geoportail/wmts?SERVICE%3DWMTS%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Mesures compensatoires prescrites des atteintes à la biodiversité (polygone)",
+          "ident": "compensatoires_biodiversité_polygone",
+          "description": "Une mesure compensatoire des atteintes à la biodiversité intervient sur l’impact résiduel d’un projet d’aménagement, lorsque toutes les mesures envisageables ont été mises en œuvre pour éviter puis réduire les impacts négatifs sur la biodiversité.",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/48ac3589-499d-4f42-9716-73b4eefef35c",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=geomce_3857_l_mesure_compensatoire_s_000&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.cdata.cerema.fr/wms_sdom/ENV_INTEGR",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Mesures compensatoires prescrites des atteintes à la biodiversité (point)",
+          "ident": "compensatoires_biodiversité_point",
+          "description": "Une mesure compensatoire des atteintes à la biodiversité intervient sur l’impact résiduel d’un projet d’aménagement, lorsque toutes les mesures envisageables ont été mises en œuvre pour éviter puis réduire les impacts négatifs sur la biodiversité.",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/48ac3589-499d-4f42-9716-73b4eefef35c",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=geomce_3857_l_mesure_compensatoire_l_000&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.cdata.cerema.fr/wms_sdom/ENV_INTEGR",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Mesures compensatoires prescrites des atteintes à la biodiversité (linéaire)",
+          "ident": "compensatoires_biodiversité_linéaire",
+          "description": "Une mesure compensatoire des atteintes à la biodiversité intervient sur l’impact résiduel d’un projet d’aménagement, lorsque toutes les mesures envisageables ont été mises en œuvre pour éviter puis réduire les impacts négatifs sur la biodiversité.",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/48ac3589-499d-4f42-9716-73b4eefef35c",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=geomce_3857_l_mesure_compensatoire_p_000&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.cdata.cerema.fr/wms_sdom/ENV_INTEGR",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Géorisques",
+      "ident": null,
+      "description": "Couches diffusées sur le portail Géorisques par le Bureau des Recherches Géologiques et Minières (BRGM)  et le Ministère de la Transition Ecologique.",
+      "type": "folder",
+      "children": [
+        {
+          "title": "CASIAS - Base des Anciens Sites Industriels et Activités de Service (Point)",
+          "ident": "casias",
+          "description": "La CASIAS anciennement BASIAS recense les sites industriels, abandonnés ou en activité,  susceptibles d'engendrer une pollution de l'environnement",
+          "metadata_url": "https://www.georisques.gouv.fr/articles-risques/pollutions-sols-sis-anciens-sites-industriels/basias",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=SSP_ETS_GE_POINT&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "CASIAS - Base des Anciens Sites Industriels et Activités de Service (Polygon)",
+          "ident": "casias",
+          "description": "La CASIAS anciennement BASIAS recense les sites industriels, abandonnés ou en activité,  susceptibles d'engendrer une pollution de l'environnement",
+          "metadata_url": "https://www.georisques.gouv.fr/articles-risques/pollutions-sols-sis-anciens-sites-industriels/basias",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=SSP_ETS_GE_POLYGON&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Sites et Sols Pollués ou potentiellement pollués (SSP, ex-BASOL)",
+          "ident": "basol",
+          "description": "Sites et sols pollués (ou potentiellement pollués) appelant une action des pouvoirs publics,  à titre préventif ou curatif",
+          "metadata_url": "https://www.georisques.gouv.fr/articles-risques/pollutions-sols-sis-anciens-sites-industriels/basol",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&dpiMode=7&format=image/png&layers=SSP_INSTRUCTION&styles&url=https://www.georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Plan de Prévention des Risques d'inondation (PPRi)",
+          "ident": "ppri",
+          "description": "Le plan de prévention des risques naturels d'inondation (PPRi ou PPRNi)  Le PPRNi est un outil de prévention majeur contre les risques naturels d'inondation,  permettant d'influer sur l'occupation et l'utilisation des sols",
+          "metadata_url": "https://www.georisques.gouv.fr/plans-de-prevention-des-risques-naturels",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=PPRN_ZONE_INOND_FXX&maxHeight=256&maxWidth=256&styles=default&url=https://www.georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Surface inondable - Aléa submersion rare ou millénial",
+          "ident": "alea_submersion_rare",
+          "description": "Les inondations et les submersions marines sont les risques naturels qui concernent le plus grand nombre de personnes en France. Phénomène saisonnier qui trouve sa source dans des précipitations soutenues et durables, l’inondation peut aussi venir de la mer ou des eaux souterraines. Ce risque naturel peut être fortement accentué par les activités humaines et les aménagements",
+          "metadata_url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees/zonages-inondation-rapportage-2020",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ISO_HT_03_04FAI_MYT&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Surface inondable - Aléa submersion moyen ou centennal",
+          "ident": "alea_submersion_moyen",
+          "description": "Les inondations et les submersions marines sont les risques naturels qui concernent le plus grand nombre de personnes en France. Phénomène saisonnier qui trouve sa source dans des précipitations soutenues et durables, l’inondation peut aussi venir de la mer ou des eaux souterraines. Ce risque naturel peut être fortement accentué par les activités humaines et les aménagements",
+          "metadata_url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees/zonages-inondation-rapportage-2020",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ISO_HT_03_03MCC_FXX&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Surface inondable - Aléa débordement de cours d'eau fréquent ou décennal",
+          "ident": "alea_submersion_frequent",
+          "description": "Les inondations et les submersions marines sont les risques naturels qui concernent le plus grand nombre de personnes en France. Phénomène saisonnier qui trouve sa source dans des précipitations soutenues et durables, l’inondation peut aussi venir de la mer ou des eaux souterraines. Ce risque naturel peut être fortement accentué par les activités humaines et les aménagements",
+          "metadata_url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees/zonages-inondation-rapportage-2020",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=ISO_HT_03_01FOR_FXX&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Canalisations de transport de matières dangereuses; Produits chimiques",
+          "ident": "canalisation_produit_chimique",
+          "description": "Il s’agit d’une canalisation qui achemine des produits chimiques vers des réseaux de distribution, d’autres ouvrages de transport, des entreprises industrielles ou commerciales, des sites de stockage ou de chargement. Cette dénomination ne s’applique pas au réseau de distribution de gaz en ville, mais aux conduites de transport longue distance, qui sont plus grosses (entre 8 et 120 cm de diamètre) et fonctionnent à des pressions plus importantes (jusqu’à 94 bars)",
+          "metadata_url": "https://www.georisques.gouv.fr/cartes-interactives#/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=C_PRODUITS_CHIM&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Canalisations de transport de matières dangereuses; Gaz",
+          "ident": "canalisation_gaz",
+          "description": "Il s’agit d’une canalisation qui achemine du gaz vers des réseaux de distribution, d’autres ouvrages de transport, des entreprises industrielles ou commerciales, des sites de stockage ou de chargement. Cette dénomination ne s’applique pas au réseau de distribution de gaz en ville, mais aux conduites de transport longue distance, qui sont plus grosses (entre 8 et 120 cm de diamètre) et fonctionnent à des pressions plus importantes (jusqu’à 94 bars)",
+          "metadata_url": "https://www.georisques.gouv.fr/cartes-interactives#/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=C_GAZ&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Canalisations de transport de matières dangereuses; Hydrocarbure",
+          "ident": "canalisation_hydrocarbure",
+          "description": "Il s’agit d’une canalisation qui achemine des hydrocarbures vers des réseaux de distribution, d’autres ouvrages de transport, des entreprises industrielles ou commerciales, des sites de stockage ou de chargement. Cette dénomination ne s’applique pas au réseau de distribution de gaz en ville, mais aux conduites de transport longue distance, qui sont plus grosses (entre 8 et 120 cm de diamètre) et fonctionnent à des pressions\n  metadata_url: https://www.georisques.gouv.fr/cartes-interactives#/",
+          "metadata_url": "https://www.georisques.gouv.fr/cartes-interactives#/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=C_HYDROCARBURES&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Exposition au retrait-gonflement des argiles",
+          "ident": "argiles",
+          "description": "Les terrains argileux superficiels peuvent voir leur volume varier à la suite d'une modification de  leur teneur en eau, en lien avec les conditions météorologiques. Ils se « rétractent » lors des périodes de sécheresse (phénomène de « retrait »)  et gonflent au retour des pluies lorsqu’ils sont de nouveau hydratés (phénomène de « gonflement »). Ces variations sont lentes, mais elles peuvent atteindre une amplitude  assez importante pour endommager les bâtiments localisés sur ces terrains. Le phénomène de retrait-gonflement des argiles engendre chaque année des dégâts considérables,  indemnisables au titre des catastrophes naturelles.  La grande majorité des sinistres concerne les maisons individuelles",
+          "metadata_url": "https://www.georisques.gouv.fr/cartes-interactives#/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=C_HYDROCARBURES&styles&tilePixelRatio=0&url=http://georisques.gouv.fr/services",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Foncier",
+      "ident": "",
+      "description": "Couches relatives au foncier (IGN)",
+      "type": "folder",
+      "children": [
+        {
+          "title": "PCI - Plan Cadastral Informatisé Vecteur",
+          "ident": "pci",
+          "description": "Le plan cadastral est un assemblage d’environ 600 000 feuilles ou planches représentant chacune  une section ou une partie d’une section cadastrale",
+          "metadata_url": "https://geoservices.ign.fr/parcellaire-express-pci",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=CADASTRALPARCELS.PARCELLAIRE_EXPRESS&styles=PCI vecteur&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Decalage de la representation cadastrale",
+          "ident": "decalage_cadastre",
+          "description": "Cartographie des décalages entre les données BD Parcellaire et Parcellaire Express",
+          "metadata_url": "https://www.datagrandest.fr/portail/fr/actualites/evolution-du-produit-parcellaire-lign",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=CADASTRALPARCELS.HEATMAP&styles=DECALAGE DE LA REPRESENTATION CADASTRALE&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Qualité du géoréférencement de la BD Parcellaire",
+          "ident": "qualite_bd_parcellaire",
+          "description": "Qualité du géoréférencement de la BD Parcellaire",
+          "metadata_url": "https://geoservices.ign.fr/sites/default/files/2021-07/DL_BDPARCELLAIRE_1-2.pdf",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=CADASTRALPARCELS.QUALREFBDP&styles=DIVCAD_MTD&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Urbanisme et patrimoine",
+      "ident": "",
+      "description": "Couches diffusées par le Géoportail de l'Urbanisme, l'IGN et l'atlas du patrimoine",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Monuments historiques",
+          "ident": "monuments_historiques",
+          "description": "Un monument historique est un immeuble (bâti ou non bâti : parc, jardin, grotte…) ou un objet mobilier (meuble ou immeuble par destination) recevant un statut juridique particulier destiné à le protéger pour son intérêt historique, artistique, architectural mais aussi technique ou scientifique afin qu’il soit conservé, restauré et mis en valeur",
+          "metadata_url": "https://www.geoportail-urbanisme.gouv.fr/services/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&dpiMode=7&format=image/png&layers=monument_historique&styles&tilePixelRatio=0&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Monuments nationaux",
+          "ident": "monuments_nationaux",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=POI.MONUMENTS_BDD_WLD_WM&styles&tilePixelRatio=0&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Monuments naturels et sites",
+          "ident": "Monuments_naturels_sites",
+          "description": "Un site inscrit est un espace naturel ou bâti de caractère artistique, historique, scientifique, légendaire ou pittoresque qui nécessite d’être conservé",
+          "metadata_url": "https://www.culture.gouv.fr/Regions/Drac-Centre-Val-de-Loire/Nos-secteurs-d-activite/Espaces-proteges/Les-sites-inscrits-et-classes",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&dpiMode=7&format=image/png&layers=monument_naturel_site&styles&tilePixelRatio=0&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Emprise des documents d'urbanisme (petite échelle)",
+          "ident": "emprise_documents_urbanisme",
+          "description": "Emprise des documents d'urbanisme (petite échelle)",
+          "metadata_url": "https://www.geoportail-urbanisme.gouv.fr/services/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=document&styles&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "PLU - Documents d'urbanisme",
+          "ident": "plu",
+          "description": "PLU, POS, CC : Le plan local d''urbanisme (PLU) -anciennement plan d''occupation des sols (POS)- fixe les règles générales et les servitudes d''utilisation du sol sur la totalité du territoire communal",
+          "metadata_url": "https://www.geoportail-urbanisme.gouv.fr/services/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=du&styles&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "SCOT - Schéma de Cohérence Territoriale",
+          "ident": "scot",
+          "description": "Le schéma de cohérence territoriale (SCoT) est un document d'urbanisme qui, à l'échelle d'un territoire de projet ou bassin de vie (périmètre intercommunal ou au-delà), détermine l'organisation spatiale et les grandes orientations de développement d'un territoire.",
+          "metadata_url": "https://www.geoportail-urbanisme.gouv.fr/services/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=scot&styles&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Communes loi littoral",
+          "ident": "communes_loi_littoral",
+          "description": "La loi Littoral concerne plus de 1 200 communes riveraines de la mer, mais aussi de grands lacs, d'estuaires ou de deltas. Face à la pression urbaine, aux phénomènes d'érosion ou de submersion marine subis par ces territoires, elle tente de concilier préservation et développement du littoral",
+          "metadata_url": "https://carmen.naturefrance.fr/",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=Loi_littoral_2020&maxHeight=256&maxWidth=256&styles=default&url=http://ws.carmen.developpement-durable.gouv.fr/WMS/91/loi_littoral?",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Prescriptions",
+          "ident": "prescriptions",
+          "description": "",
+          "metadata_url": "https://www.service-public.fr/particuliers/vosdroits/F642",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=prescription&styles&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Prescriptions des PSMV",
+          "ident": "prescriptions_psmv",
+          "description": "Le PSMV est un document de planification prévu pour assurer la sauvegarde et la mise en valeur des sites patrimoniaux remarquables (et, avant eux, des secteurs sauvegardés)",
+          "metadata_url": "https://www.service-public.fr/particuliers/vosdroits/F642",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=prescription_psmv&styles&url=https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Aéroports",
+          "ident": "aeroports",
+          "description": "",
+          "metadata_url": "",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=TRANSPORTNETWORKS.RUNWAYS&styles=normal&tileMatrixSet=PM&url=https://wxs.ign.fr/topographie/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Communes 2019 soumises à la loi Montagne de 1985",
+          "ident": "communes_loi_montagne",
+          "description": "Missionné par la DHUP (Bureau de la législation de l'urbanisme), le Cerema a réalisé une actualisation au 1er janvier 2019 de la liste des communes concernées par l'application des dispositions d'urbanisme de la loi Montagne (Loi n° 85-30 du 9 janvier 1985 relative au développement et à la protection de la montagne, Loi n° 2016-1888 du 28 décembre 2016 de modernisation, de développement et de protection des territoires de montagne).",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/17aaef31-af53-4d68-97c8-741e695f1820",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=layer31&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.datara.gouv.fr/map/carte_zonage_amenagement?VERSION%3D1.3.0",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Portail cartographique des EnR (Cerema)",
+      "ident": "",
+      "description": "",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Potentiel solaire et électrique et thermique",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Friches susceptibles d’accueillir des installations photovoltaïques",
+              "ident": "friches_photovoltaiques",
+              "description": "Cette couche provient du recensement nationale de friches Cerema Cartofriches dont une couche de données «friches intéressantes pour du PV au sol» issue du travail de recensement de friches menée par le Cerema et Tecsol (étude nationale commandée par MTE/Ademe). Elle identifie des friches favorables a priori à l’implantation de centrale solaire au sol. Elle constitue une information privilégiée pour favoriser l’implantation de photovoltaïque au sol sur site déjà anthropisé au regard des enjeux de préservation des espaces naturels",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=POTENTIEL.SOLAIRE.FRICHE&styles=POTENTIEL.SOLAIRE.FRICHE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Potentiel solaire sur toiture (méthode simplifiée)",
+              "ident": "potentiel_solaire",
+              "description": "Estimation simplifiée du potentiel solaire en toiture en Wh/an sur la base de la couche bâti de la Bd Topo® (2022 - producteur IGN). Pour chaque emprise de bâtiment, la valeur fournie est une estimation de l’énergie solaire reçue sur des panneaux photovoltaïque qui seraient installés sur toiture, selon une méthode très simplifiée décrite dans la fiche de métadonnées de cette couche et qui, notamment, ne prend pas en compte les masques proches. Cette information est fournie à titre indicatif et ne saurait se substituer à des estimations réalisées avec des méthodes plus précises",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=POTENTIEL.SOLAIRE.BATIMENT&styles=POTENTIEL.SOLAIRE.BATIMENT&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Unités foncières contenant des surfaces de stationnement non couvertes de plus de 500 m² (données déclaratives)",
+              "ident": "surface_non_couvertes_500",
+              "description": "Cette couche nationale représente des unités foncières contenant des surfaces de stationnement non couvertes, déclarées fiscalement en France métropolitaine et d’une superficie minimale de 500 m². Les données de cette couche sont constituées à partir des données sources de « Fichiers Fonciers » (2022 – producteur Cerema pour le compte du MTE) et Bd Topo® (2022 - producteur IGN). Ce recensement spécifique peut être approfondi pour identifier des sites favorables à l’implantation d’ombrière de parking",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=POTENTIEL.SOLAIRE.PARKING500&styles=POTENTIEL.SOLAIRE.PARKING500&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Parkings de plus de 500m²",
+              "ident": "parkings_500",
+              "description": "Cette couche nationale représente des unités foncières contenant des surfaces de stationnement non couvertes, déclarées fiscalement en France métropolitaine et d’une superficie minimale de 500 m². Les données de cette couche sont constituées à partir des données sources de « Fichiers Fonciers » (2022 – producteur Cerema pour le compte du MTE) et Bd Topo ® (2022 - producteur IGN)",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PARKING.SUP.500&styles=PARKING.SUP.500&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Délaissés autoroutiers",
+              "ident": "delaisses_autoroutiers",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=DELAISSES.AUTOROUTIERS&styles=DELAISSES.AUTOROUTIERS&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Potentiel éolien terrestre",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Eolien 'clé en main'",
+              "ident": "eolien_cle_en_main",
+              "description": "Le territoire est concerné par 4 niveaux d'enjeux différents: 0 pour les zones rédhibitoires où l''éolien est réglementairement interdit, 1 pour les zones non potentiellement favorables du fait de forts enjeux avérés, 2 pour les zones potentiellement favorables sous réserve de la prise en compte d''enjeux et 3 pour les zones potentiellement favorables sous réserve de la prise en compte d''enjeux locaux. Cette couche se veut hybride. En effet, les données sur les régions de Bourgogne-France-Comté, Centre-Val de Loire, Corse, Hauts-de-France, Ile de France, Normandie, Nouvelle-Aquitaine et Pays de la Loire, ont été élaborées par les services de l’État en région dans le cadre du travail de cartographies des zones favorables au développement de l''éolien initié par la circulaire de mai 2021. Elles sont conformes aux orientations établies en 2022 par le Ministère de la Transition énergétique en lien avec le Ministère de la Transition écologique et de la Cohésion des territoires pour permettre une harmonisation des travaux effectués dans les différentes régions.  Elles illustrent le travail de synthèse des différentes contraintes et enjeux proposé par les services de l’État en région. Ces couches sont des aides à la décision pour la définition des zones d''accélération. Les élus peuvent s''appuyer sur ces cartographies s''ils le souhaitent. Ces couches n''ont pas de valeur règlementaire. Sur le reste du territoire, sont représentées les couches dites ''réglementaires'', i.e. des couches d''information nationales. Elles permettent par exemple de visualiser les zones où il est interdit d''implanter des éoliennes dans un rayon de 500 mètres autour des habitations (article L 553-1 du code de l''environnement), les routes, les voies ferrées ainsi que les zones concernées par des contraintes aéronautiques civiles et militaires. Ces couches ont été créées par l''IGN à partir de données issues de la BD Topo ou du service de l''information aéronautique (SIA). Les niveaux d''enjeux ont été définis en fonction de la réglementation en vigueur par la DGEC en collaboration avec la DGAC ou le ministère des armées en fonction de la nature des contraintes",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=POTENTIEL.EOLIEN.REGLEMENTAIRE&styles=POTENTIEL.EOLIEN.REGLE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Potentiel éolien terrestre - gisement de vent à 140m",
+              "ident": "vent_140",
+              "description": "Ces données de vent sont issues d’une étude nationale Météo France « AROME » et représentent les moyennes de vent mesurées à une hauteur de 140m",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=POTENTIEL.VENT.140M&styles&url=https://wxs.ign.fr/enr/geoportail/r/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Potentiel éolien terrestre - gisement de vent à 160m",
+              "ident": "vent_160",
+              "description": "Ces données de vent sont issues d’une étude nationale Météo France « AROME » et représentent les moyennes de vent mesurées à une hauteur de 160m.",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=POTENTIEL.VENT.160M&styles&url=https://wxs.ign.fr/enr/geoportail/r/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires aeronautiques civiles",
+              "ident": "contrainte_aéronautiques_civiles",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.AERO.CIVIL&styles=ENR.AERO.CIVIL&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires aeronautiques militaires",
+              "ident": "contrainte_aéronautiques_mitilaires",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.AERO.MILITAIRE&styles=ENR.AERO.MILITAIRE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires liées aux habitations",
+              "ident": "contrainte_habitations",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.PERIMETRE.HABITATION&styles=PERIMETRE.HABITATION&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires liées aux pentes",
+              "ident": "contrainte_pentes",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.PERIMETRE.PENTE&styles=PERIMETRE.PENTE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires liées aux routes",
+              "ident": "contrainte_routes",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.PERIMETRE.ROUTE&styles=PERIMETRE.ROUTE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Contraintes réglementaires liées aux voies férrées",
+              "ident": "contrainte_train",
+              "description": "",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=ENR.PERIMETRE.VOIE.FERREE&styles=PERIMETRE.VOIE.FERREE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Potentiel hydroélectrique",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Potentiel hydroélectrique sur nouveaux ouvrages",
+              "ident": "potentiel_hydroeletrique",
+              "description": "Cette couche est une estimation des potentiels hydroélectriques uniquement sur nouveaux ouvrages. Les centrales hydroélectriques existantes, ainsi que les projets en cours de développement (autorisés, concédés ou lauréats d''un Appel d'Offre CRE) ont été retirés de la cartographie, pour qu''il ne reste vraiment que le potentiel à développer. Les données correspondent uniquement au potentiel sur site vierge. Une commune pourrait ainsi disposer d''un potentiel (sur ouvrage existant), sans que celui-ci n''apparaisse sur la couche. Producteur: ISL / Post traitement Cerema",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=POTENTIEL.HYDRO&styles=POTENTIEL.HYDRO&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Potentiel de développement de réseaux de chaleur et de froid",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "title": "Localisation des installations de production énergétique",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Localisation des mâts éolien",
+              "ident": "localisation_eolienne",
+              "description": "Ces données concernent la localisation des mâts d’éoliennes et sont produites par agrégation des données diffusées par les DREAL. Les parcs éoliens concernés sont construits ou en service, voire en instruction ou dont l’état n’est pas connu. Ce jeu de données ne répertorie pas les projets abandonnés ou dont la demande d’autorisation n’a pas abouti",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=LOCALISATION.MATS.EOLIEN&styles=LOCALISATION.MATS.EOLIEN&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Productibles annuels par filière de production d'énergie",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "title": "Puissances cumulées électriques installés",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Puissance cumulée des installations éoliennes par commune",
+              "ident": "puissance_eoliennes_commune",
+              "description": "Cette couche nationale représente la somme en kW des puissances installées pour la filière photovoltaïque par commune, reconstituée à partir de l’exploitation du registre national des installations de production et de stockage d’électricité raccordées directement ou indirectement aux réseaux publics d’électricité en France métropolitaine et dans les zones non interconnectées (ZNI) arrêté au 28 février 2023",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PROD.INSTALLATION.EOLIEN&styles=PROD.INSTALLATION.EOLIEN&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Puissance cumulée des installations hydrauliques par commune",
+              "ident": "puissance_hydroelectrique_commune",
+              "description": "Cette couche nationale représente la somme des puissances installées en kW pour la filière hydraulique par commune, reconstituée à partir de l’exploitation du registre national des installations de production et de stockage d’électricité raccordées directement ou indirectement aux réseaux publics d’électricité en France métropolitaine et dans les zones non interconnectées (ZNI) arrêté au 28 février 2023",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PROD.INSTALLATION.HYDRO&styles=PROD.INSTALLATION.HYDRO&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Puissance cumulée électrique installée par filière renouvelable par commune",
+              "ident": "puissance_cumulee_commune",
+              "description": "",
+              "metadata_url": "https://www.data.gouv.fr/fr/datasets/production-electrique-annuelle-par-filiere-a-la-maille-commune/",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PART.ENR.COMMUNE&styles=PART.ENR.COMMUNE&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Puissance cumulée des installations photovoltaïques par commune",
+              "ident": "puissance_photovoltaiques_commune",
+              "description": "Cette couche nationale représente la somme en kW des puissances installées pour la filière photovoltaïque par commune, reconstituée à partir de l’exploitation du registre national des installations de production et de stockage d’électricité raccordées directement ou indirectement aux réseaux publics d’électricité en France métropolitaine et dans les zones non interconnectées (ZNI) arrêté au 28 février 2023.",
+              "metadata_url": "https://macarte.ign.fr/carte/1X3jxe/Carte-EnR-Grand-public",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=PROD.INSTALLATION.PV&styles=PROD.INSTALLATION.PV&tileMatrixSet=PM&url=https://wxs.ign.fr/enr/geoportail/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eau",
+      "ident": "",
+      "description": "Données relatives aux services d'administration nationale des données et référentiels sur l'eau (SANDRE) et de Cart'eaux",
+      "metadata_url": "",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Segments de classement de continuité écologique - liste 1",
+          "ident": "continuite_eco_liste1",
+          "description": "Un Classement de Continuité Ecologique correspond à tout ou partie d'un cours ou d'un canal identifié.  Le classement en liste 1 a pour vocation de protéger certains cours d’eau des dégradations et permet  d’afficher un objectif de préservation à long terme",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/bbc59e0deb382a4e97e4bf75d08657fef8730552",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=SegClassContinuiteEcoListe1&styles&url=https://services.sandre.eaufrance.fr/geo/sandre",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Segments de classement de continuité écologique - liste 2",
+          "ident": "continuite_eco_liste2",
+          "description": "Un Classement de Continuité Ecologique correspond à tout ou partie d'un cours ou d'un canal identifié.  La liste 2 annule, replace et complète la notion de « rivières classées », elle permet d’assurer rapidement  la compatibilité des ouvrages existants avec les objectifs de continuité écologique",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/bbc59e0deb382a4e97e4bf75d08657fef8730552",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=SegClassContinuiteEcoListe2&styles&url=https://services.sandre.eaufrance.fr/geo/sandre",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Segments de classement de continuité écologique - liste 1/2",
+          "ident": "continuite_eco_liste_1_2",
+          "description": "Combinaison des listes de continuités écologiques 1 et 2",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/bbc59e0deb382a4e97e4bf75d08657fef8730552",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:3857&dpiMode=7&format=image/png&layers=SegClassContinuiteEco&styles&url=https://services.sandre.eaufrance.fr/geo/sandre",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Cours d'eau - BD Carthage",
+          "ident": "Cours d'eau - BD Carthage",
+          "description": "Entité hydrographique, une entité hydrographique est un cours d’eau naturel ou aménagé,  un bras naturel ou aménagé, une voie d’eau artificielle (canal,…), un plan d'eau ou une ligne littorale",
+          "metadata_url": "https://geo.data.gouv.fr/fr/datasets/ee5c709c9b7ff928ab2529b79ce6e879c4de6950",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&dpiMode=7&format=image/png&layers=CoursEau&styles&url=https://services.sandre.eaufrance.fr/geo/sandre",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "BDTOPO (IGN)",
+      "ident": "",
+      "description": "La modélisation 2D du territoire et de ses infrastructures sur l'ensemble du territoire français produit par l'IGN",
+      "metadata_url": "https://geoservices.ign.fr/bdtopo",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Administatif",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "title": "Bati",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Bâtiments",
+              "ident": "batiments",
+              "description": "Construction au-dessus du sol qui est utilisée pour abriter des humains, des animaux, des objets, pour la production de biens économiques ou pour la prestation de services et qui se réfère à toute structure construite ou érigée de façon permanente sur son site.",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2021-07/DC_BDTOPO_3-0.pdf#%5B%7B%22num%22%3A2238%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C29%2C382%2C0%5D",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=BUILDINGS.BUILDINGS&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Occupation du sol",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Haies lineraires",
+              "ident": "haies",
+              "description": "La BD Haie est le résultat des travaux initiés dans le cadre du dispositif de suivi des bocages (DSB).",
+              "metadata_url": "https://geoservices.ign.fr/bdhaie",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=hedge.hedge&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Transports",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Réseau ferroviaire",
+              "ident": "reseau_ferroviaire",
+              "description": "Portion de voie ferrée homogène",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2022-11/BDTOPO%C2%AE_Th%C3%A8me_Transport-Descriptif_de_contenu.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=TRANSPORTNETWORKS.RAILWAYS&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "Routes",
+              "ident": "routes",
+              "description": "Portion de voie de communication destinée aux automobiles, aux piétons, aux cycles ou aux animaux,homogène",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=TRANSPORTNETWORKS.ROADS&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC - PEB (Plans d'exposition aux bruits)",
+              "ident": "dgac_peb",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=DGAC-PEB_BDD_FXX_WM_WMS&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC - PGS (Plans de gêne sonore)",
+              "ident": "dgac_pgs",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=DGAC-PGS_BDD_FXX_WM_WMS&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC - PSA (Plans de servitudes aéronautiques)",
+              "ident": "dgac_psa",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=TRANSPORTS.AIRNOISE&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC Documentations - PEB (Plans d'exposition aux bruits)",
+              "ident": "dgac_documentations_peb",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=DGAC-PEB-POI_BDD_WLD_WM&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC Documentations - PGS (Plans de gêne sonore)",
+              "ident": "dgac_documentations_pgs",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=DGAC-PGS-POI_BDD_FXX_WM_WM&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "DGAC Documentations - PSA (Plans de servitudes aéronautiques)",
+              "ident": "dgac_documentations_psa",
+              "description": "",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2023-10/DC_BDTOPO_Transport.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&featureCount=10&format=image/png&layers=TRANSPORTS.AIRNOISE.DOCS&maxHeight=256&maxWidth=256&styles=&url=https://wxs.ign.fr/transports/geoportail/v/wms?VERSION%3D1.3.0",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Lieu nommés",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Dénominations géographiques",
+              "ident": "Denominations_geographiques",
+              "description": "Dénominations topologiques sur le territoire",
+              "metadata_url": "",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=GEOGRAPHICALNAMES.NAMES&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Zones réglemenentées",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "title": "Services et activités",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "Lignes électriques aériennes haute tension",
+              "ident": "lignes_electriques",
+              "description": "Toutes les lignes électriques à haute (voltage ≥ 63 kV) ou à très haute tension (voltage ≥ 150 kV) sont incluses, sauf les souterraines.",
+              "metadata_url": "https://geoservices.ign.fr/sites/default/files/2021-07/DC_BDTOPO_3-0.pdf#%5B%7B%22num%22%3A5941%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C29%2C434%2C0%5D",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:3857&fdpiMode=7&format=image/png&http-header:referer=&layers=UTILITYANDGOVERNMENTALSERVICES.ALL&styles=normal&tileMatrixSet=PM&url=https://data.geopf.fr/wmts?SERVICE%3DWMTS%26VERSION%3D1.0.0%26REQUEST%3DGetCapabilities",
+                "provider": "wms"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Occitanie",
+      "ident": "",
+      "description": "Zonages environnementaux diffusés par la Direction Régionale de l'Environnement, de l'Aménagement et du Logement d'Occitanie (DREAL).",
+      "type": "folder",
+      "children": [
+        {
+          "title": "PNA",
+          "ident": "",
+          "description": "",
+          "type": "folder",
+          "children": [
+            {
+              "title": "PNA Aigle de Bonelli - Domaines vitaux",
+              "ident": "aigle_bonelli_vitaux",
+              "description": "L'aigle de Bonelli est une espèce protégée au niveau national et comme telle, en vertu de l'arrêté du 29 octobre 2009 fixant la liste des oiseaux protégés sur l’ensemble du territoire et les modalités de leur protection (article 3)",
+              "metadata_url": "https://catalogue.picto-occitanie.fr/geonetwork/srv/fre/catalog.search#/metadata/5d6e6a05-094a-43f7-a881-b70a60a6df60",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnaaigledebonelli_dv_s_000&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Aigle de Bonelli - Zones d’erratisme",
+              "ident": "aigle_bonelli_erratisme",
+              "description": "L'aigle de Bonelli est une espèce protégée au niveau national et comme telle, en vertu de l'arrêté du 29 octobre 2009 fixant la liste des oiseaux protégés sur l’ensemble du territoire et les modalités de leur protection (article 3)",
+              "metadata_url": "https://catalogue.picto-occitanie.fr/geonetwork/srv/fre/catalog.search#/metadata/8b070f45-92e3-4840-a11d-fd7816f3072c",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnaaigledebonelli_er_s_000&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Butoir Etoilé",
+              "ident": "butoir_etoile",
+              "description": "Le Butor étoilé est une espèce d'oiseaux échassiers de la famille des ardéidés. Considéré d'après les recensements effectués comme une espèce très menacée, sa population est en déclin rapide en Europe et aurait chuté de 35 à 45 % en France en 30 ans.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Butor-etoile_2008-2012.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnabutoiretoile_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Chiroptère",
+              "ident": "chiroptère",
+              "description": "Les Chiroptères, appelés couramment chauves-souris ou chauvesouris",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Chiropteres_2016-2025.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnachiroptere_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Desman des Pyrénées - Zone de présence en Occitanie",
+              "ident": "desman_pyrennees",
+              "description": "Le Desman des Pyrénées, également appelé Rat-trompette, est une espèce de petits mammifères de la famille des Talpidés, endémique de la chaîne des Pyrénées et des zones montagneuses du nord-ouest de la péninsule Ibérique.",
+              "metadata_url": "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/pna_desman.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pna_desmandespyrennes_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Emyde lépreuse",
+              "ident": "emyde_lepreuse",
+              "description": "Mauremys leprosa, l'Émyde lépreuse, est une espèce de tortues dulçaquicoles de la famille des Geoemydidae. Cette espèce est classifiée 'Vulnérable' à l'échelle européenne par l'Union Internationale pour la Conservation de la Nature.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Emyde-lepreuse_2012-2016.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnaemydelepreuse_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Faucon Crecerellette DV",
+              "ident": "faucon_crecerellette",
+              "description": "Le Faucon crécerellette est une petite espèce de rapaces très semblable au Faucon crécerelle mais plus svelte. Il peut être désigné sous le nom vernaculaire de Crécerine.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA%20Faucon%20Crecerellette_2021-2030.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnafauconcrecerellettedv_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Grand tétras - Zone de présence globale (zone 1)",
+              "ident": "grand_tetras",
+              "description": "Les Chiroptères, appelés couramment chauves-souris ou chauvesouris",
+              "metadata_url": "https://www.bourgogne-franche-comte.developpement-durable.gouv.fr/plan-national-d-actions-en-faveur-du-grand-tetras-a7661.html",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnagrandtetras_zonedepresence_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Gypaète",
+              "ident": "gypaete",
+              "description": "Le Gypaète barbu (Gypaetus barbatus) est un grand rapace nécrophage qui présente une envergure imposante",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Gypaete-barbu_2010-2020.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnagypaete_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Lézard des Pyrénées - Zones de présences dans les Pyrénées",
+              "ident": "lezard_pyrenees",
+              "description": "Le Lézard des Pyrénées, ou Lézard de Bonnal, est une espèce de sauriens de la famille des Lacertidae",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Lezards-des-Pyrenees_2013-2017_.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnalezardpyreneeszonedepresence_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Lézard Ocellé",
+              "ident": "lezard_ocelle",
+              "description": "Le Lézard ocellé est une espèce de sauriens de la famille des Lacertidae. C'est le plus grand lézard d'Europe et l'un des plus grands d'Espagne, avec le lézard géant de Gran Canaria",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA%20L%C3%A9zard%20Ocell%C3%A9_BAT.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnalezardocelle_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Maculinéa",
+              "ident": "maculinéa",
+              "description": "Phengaris est un genre paléarctique de lépidoptères de la famille des Lycaenidae et de la sous-famille des Polyommatinae. Il inclut actuellement les espèces précédemment placées dans le genre Maculinea. Ces papillons sont connus pour leur cycle de vie complexe, où la chenille doit effectuer une partie de son développement à l'intérieur d'une fourmilière",
+              "metadata_url": "https://papillons.pnaopie.fr/wp-content/uploads/2021/06/PNA-maculinea.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnamaculinea_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Milan Royal - Domaines Vitaux en Occitanie",
+              "ident": "milan_royal",
+              "description": "Le Milan royal est une espèce de rapaces peuplant l'écozone paléarctique occidentale. En ancien français et encore au XVIᵉ siècle, il est appelé escoufle.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA-Milan-Royal-2018-2027.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnamilanroyaldv_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Outarde Hivernage",
+              "ident": "outarde_hivernage",
+              "description": "Échassier au corps lourd et à fortes pattes, à long cou et à bec court.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_outarde_canepetiere.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnaoutardehi_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Pie grèche à poitrine rose",
+              "ident": "pie_greche_rose",
+              "description": "La Pie-grièche à poitrine rose est une espèce de passereaux aux mœurs alimentaires carnassières, appartenant à la famille des Laniidae. Cette pie-grièche est considérée en France, au début des années 2010, comme en danger critique.",
+              "metadata_url": "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/PNA_Lanius_2014-2018.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnapiegrecheapoitrinerose_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Pie-Grièche Grise",
+              "ident": "pei-greche_grise",
+              "description": "La Pie-grièche grise est une espèce d'oiseaux de la famille des Laniidae. Elle niche en Europe méridionale et en Afrique du Nord. La forme migratrice est quelquefois visible en Europe occidentale",
+              "metadata_url": "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/PNA_Lanius_2014-2018.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnapiegriechegrise_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Pie-Grièche Méridionale",
+              "ident": "pie_greche_meridionale",
+              "description": "La Pie-grièche méridionale (Lanius meridionalis) est une espèce d''oiseaux de la famille des Laniidae. Elle niche en Europe méridionale et en Afrique du Nord. La forme migratrice est quelquefois visible en Europe occidentale",
+              "metadata_url": "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/PNA_Lanius_2014-2018.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnapiegriechemeridionale_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Pie-Grièche à Tête Rousse",
+              "ident": "pie_greche_rousse",
+              "description": "Les Laniidés sont des passereaux de taille petite à moyenne, au corps allongé, à ailes arrondies et à queue longue",
+              "metadata_url": "https://www.consultations-publiques.developpement-durable.gouv.fr/IMG/pdf/PNA_Lanius_2014-2018.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnapiegriecheteterousse_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Placette d'alimentation nécrophage",
+              "ident": "placette",
+              "description": "Mise en place de placettes de dépôt de cadavres de bétail, naturellement mort en exploitation, en vue de l''équarrissage naturel par ces rapaces nécrophages en zone de montagne",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Vautour_fauve_2017-2026.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnaplacettealimentationnecrophage_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Sonneur à ventre jaune – Zone de présence du sonneur à ventre jaune",
+              "ident": "sonneur_ventre_jaune",
+              "description": "Bombina variegata est une espèce d'amphibiens de la famille des Bombinatoridae. Il est appelé en français Sonneur à ventre jaune ou Crapaud sonneur à ventre jaune ou Sonneur à pieds épais.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Sonneur-a-ventre-jaune_2011-2015.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnasonneuraventrejaune_s_r76&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Vautour Fauve - Domaines Vitaux",
+              "ident": "vautour_fauve",
+              "description": "Le Vautour fauve, ou anciennement le griffon, est une espèce d'oiseaux charognard de la famille des Accipitridae",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Vautour_fauve_2017-2026.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnavautourfauvedv_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            },
+            {
+              "title": "PNA Vautour Percnoptère - Domaines Vitaux",
+              "ident": "vautour_percnotère",
+              "description": "Le Vautour percnoptère, aussi appelé Percnoptère d'Égypte, est une espèce de rapaces de l'Ancien Monde.",
+              "metadata_url": "https://www.ecologie.gouv.fr/sites/default/files/PNA_Vautour-percnoptere_2015-2024.pdf",
+              "type": "wms_wmts_universal_layer",
+              "params": {
+                "uri": "crs=EPSG:2154&featureCount=10&format=image/png&layers=r_pnapercnoptere_s_r76ext&maxHeight=256&maxWidth=256&styles=&url=https://datacarto.picto-occitanie.fr/wms",
+                "provider": "wms"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Auvergne-Rhône-Alpes",
+      "ident": "",
+      "description": "Données issus de DatARA",
+      "type": "folder",
+      "children": [
+        {
+          "title": "Corridors écologiques linéaires",
+          "ident": "corridors_eco_lineaires",
+          "description": "Les corridors écologiques assurent des connexions entre des réservoirs de biodiversité,  offrant aux espèces des conditions favorables à leur déplacement et à l’accomplissement de leur cycle de vie",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/df86299a-30dd-4ea8-a239-b9b513b33644",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=CER_CORRIDOR_L_FR84&maxHeight=256&maxWidth=256&styles=&url=https://ids.craig.fr/wxs/public/wms",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Corridors écologiques surfaciques",
+          "ident": "corridors_eco_surfaciques",
+          "description": "Les corridors écologiques assurent des connexions entre des réservoirs de biodiversité,  offrant aux espèces des conditions favorables à leur déplacement et à l’accomplissement de leur cycle de vie",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/df86299a-30dd-4ea8-a239-b9b513b33644",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=CER_CORRIDOR_S_FR84&maxHeight=256&maxWidth=256&styles=&url=https://ids.craig.fr/wxs/public/wms",
+            "provider": "wms"
+          }
+        },
+        {
+          "title": "Zones humides régionales issues des inventaires départementaux",
+          "ident": "zones_humides_dep",
+          "description": "Selon le code de l’environnement, les zones humides sont des « terrains, exploités ou non,  habituellement inondés ou gorgés d'eau douce, salée ou saumâtre de façon permanente ou temporaire;  la végétation, quand elle existe, y est dominée par des plantes hygrophiles pendant au moins une partie de l'année",
+          "metadata_url": "https://catalogue.datara.gouv.fr/geonetwork/srv/fre/catalog.search#/metadata/df86299a-30dd-4ea8-a239-b9b513b33644",
+          "type": "wms_wmts_universal_layer",
+          "params": {
+            "uri": "crs=EPSG:4326&featureCount=10&format=image/png&layers=CER_ZONES_HUMIDES_S_FR84&maxHeight=256&maxWidth=256&styles=&url=https://ids.craig.fr/wxs/public/wms",
+            "provider": "wms"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Couches Vector Tiles",
+      "ident": null,
+      "description": null,
+      "type": "folder",
+      "children": [
+        {
+          "title": "ADMINEXPRESS Vector Tiles",
+          "ident": "adminexpress_vectortiles",
+          "description": null,
+          "metadata_url": null,
+          "type": "vector_layer",
+          "params": {
+            "url": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/ADMIN_EXPRESS/%7Bz%7D/%7Bx%7D/%7By%7D.pbf"
+          }
+        },
+        {
+          "title": "Plan IGN Vector Tiles",
+          "ident": "plan_ign_vectortiles",
+          "description": null,
+          "metadata_url": null,
+          "type": "vector_layer",
+          "params": {
+            "url": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf"
+          }
+        },
+        {
+          "title": "BD TOPO Vector Tiles",
+          "ident": "bdtopo_vectortiles",
+          "description": null,
+          "metadata_url": null,
+          "type": "vector_layer",
+          "params": {
+            "url": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/topographie/{z}/{x}/{y}.pbf"
+          }
+        }
+      ]
+    }
+  ]
+}
